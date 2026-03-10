@@ -1,0 +1,16 @@
+import { View, Text, StyleSheet } from 'react-native';
+
+export default function OnboardingScreen() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Gold Mining Circle</Text>
+      <Text style={styles.subtitle}>Discover your purpose. Pursue it together.</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: { flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#fff' },
+  title: { fontSize: 28, fontWeight: 'bold', marginBottom: 12 },
+  subtitle: { fontSize: 16, color: '#666', textAlign: 'center', paddingHorizontal: 32 },
+});
