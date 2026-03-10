@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "GoldMiningCircle",
-    "slug": "GoldMiningCircle",
+    "name": "Gold Mining Circle",
+    "slug": "gold-mining-circle",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
