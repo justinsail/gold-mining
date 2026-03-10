@@ -1,16 +1,21 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 
 export default function OnboardingScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Gold Mining Circle</Text>
-      <Text style={styles.subtitle}>Discover your purpose. Pursue it together.</Text>
+    <View className="flex-1 bg-[#1a1a2e] items-center justify-center px-8">
+      <Text className="text-[#f59e0b] text-5xl font-bold mb-3">✦</Text>
+      <Text className="text-white text-3xl font-bold text-center mb-3">
+        Gold Mining Circle
+      </Text>
+      <Text className="text-white/60 text-base text-center mb-12">
+        Discover your purpose.{'\n'}Pursue it together.
+      </Text>
+      <TouchableOpacity className="bg-[#f59e0b] w-full py-4 rounded-2xl items-center mb-4">
+        <Text className="text-white font-semibold text-base">Get Started</Text>
+      </TouchableOpacity>
+      <TouchableOpacity className="w-full py-4 rounded-2xl items-center border border-white/20">
+        <Text className="text-white/80 font-semibold text-base">I already have an account</Text>
+      </TouchableOpacity>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: { flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#fff' },
-  title: { fontSize: 28, fontWeight: 'bold', marginBottom: 12 },
-  subtitle: { fontSize: 16, color: '#666', textAlign: 'center', paddingHorizontal: 32 },
-});
